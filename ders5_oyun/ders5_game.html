@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Oyun</title>
 </head>
 <body>
-     <div class="cati" style="border: 3px solid black;margin: 0 auto;text-align: center;padding: 30px;">
+    <div class="oyunici">
+     <div class="cati " style="border: 3px solid black;margin: 0 auto;text-align: center;padding: 30px;">
     <h1 style="color:red">Hoşgeldin </h1> <h1 id="karsilama"> </h1>
-    <input type="text" id="ad" value="ad" placeholder="Adınızı girin">
+    <div class="placeholder">
+        <input type="text" id="ad" value="ad" placeholder="Adınızı girin">
+    </div>
     <h2 id="envanter">Envanteriniz: </h2>
     <h3 id="can"> Can </h2>
     <button id="basla" onclick="ad()">  Başla  </button>
@@ -23,7 +26,7 @@
 
 
 
-    <div class="item" style="display: none;">
+    <div class="item" id="Silah1" style="display: none;">
         <h2>Silah almak ister misin?</h2>
         <button onclick="al_s()">Al</button>
         <button onclick="alma_s()">Alma</button>       
@@ -39,6 +42,12 @@
        </div>
 
     </div>
+
+
+    </div>    <!-- Oyun içindeki tüm olayların bitişi oyunici divinin kapanışı  -->
+
+
+    <div class="gameover" style="text-align: center; color: red; display: none;" ><h1>Öldünüz!</h1></div>
 
     <script src="game.js"></script>
 </body>
