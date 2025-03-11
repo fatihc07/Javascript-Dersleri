@@ -1,0 +1,13 @@
+.yazi {
+
+    border: 1px solid red;
+    color: orange;
+    height: 50px;
+    background-color: green;
+
+}
+
+.hidden{
+
+    display: none;
+}
