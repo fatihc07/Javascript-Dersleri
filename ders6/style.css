@@ -6,8 +6,64 @@
     background-color: green;
 
 }
+.tanitim{
+    text-align: center;
+    color: cadetblue;
+    background-color: bisque;
+    width: 20rem;
+    height: 2rem;
+    text-decoration: dotted;
+    justify-self: center;
+}
+.tanitim:hover{
+    width: 18rem;
+    height: 2rem;
+}
 
 .hidden{
-
     display: none;
+}
+.oyunlar{
+    display: flex;
+    justify-items: center;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    justify-content: center;
+
+}
+button{
+    margin-left: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    border: 2px solid rgb(16, 226, 62);
+    border-radius: 5px 5px 5px;
+    color: white;
+    width: 10rem;
+    height: 2rem;
+    background: linear-gradient(45deg,red,blue,green);
+    background-size: 600% 600%;
+    animation: rgb 5s ease-in infinite;
+}
+button:hover{
+    width: 8rem;
+    border-radius: 10px 10px 10px;
+}
+.butonlar{
+
+}
+
+
+
+@keyframes rgb{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
 }
