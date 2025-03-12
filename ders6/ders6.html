@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  
+    <title>Şans oyunları!</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <div class="oyun_cont">
-            <button id="basla" onclick="goster()">Başla</button>
-            <button id="ana" class="hidden">Anahtarı Bul</button>
-            <p id="durum" class="hidden"></p>
-
+    <h1 class="tanitim">Oyunlar</h1>
+    <div class="oyunlar">
+        <div class="yazitura"><button onclick="yazi()">
+                Anahtarı Bul!
+            </button>
+        </div>
+        <div class="zar"><button onclick="zar()">
+                Zar Atma
+            </button>
+        </div>
+        <div class="rulet" hidden ><button onclick="rulet()">
+                Rus ruleti
+            </button>
+            <!-- yapmaya zamanım kalmadı ama geri döneceğim-->
+        </div>
+        <button hidden onclick="sans()">
+            şans makinesi
+        </button>
     </div>
-   
+
+    <div class="zar hidden">
+        <button onclick="zara()" id="zar">Zar at</button>
+        <div class="zar"></div>
+        <!-- zarı kendim yapmayı düşünmüştüm ama vakit bulamadım -->
+        <h1 id="zarsayi"></h1>
+        <button onclick="tekrar1()" class="hidden butonlar">tekrar oyna</button>
+        <button onclick="anamenu()" class="hidden butonlar">anamenü</button>
+    </div>
+    <div class="rusruleti hidden">
+        <button onclick="rusrulet()">Rus ruleti oyna!</button>
+        <h1 id="can">can = 1</h1>
+        <button class="hidden butonlar" onclick="anamenu()">anamenu</button>
+        <button class="hidden butonlar" onclick="tekrar2()">tekrar oyna</button>
+    </div>
+    <div class="yazitura hidden">
+        <button id="basla" onclick="basla()">Başla</button>
+        <button id="anahtar" class="hidden" onclick="zarat()">Anahtarı Bul</button>
+        <p id="durum" class="hidden"></p>
+        <!-- <button class="hidden butonlar" onclick="tekrar3()">tekrar oyna</button>
+        <button class="hidden butonlar" onclick="anamenu()">anamenü</button> -->
+    </div>
+
 
 
 
     <script src="j.js"></script>
 </body>
+
 </html>
