@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Not Defteri Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body  style="text-align: center;">
-    
-<div class="note" style="border: 1px solid orange;background-color: grey;padding: 20px;">
-
-    
-    <input type="text" id="baslik">
-    <textarea name="" id="not" rows="5"></textarea>
-    <button id="gonder" onclick="gonder()">Not Ekle</button>
-
-
-
-</div>
-
-<script src="java.js"></script>
+<body>
+    <div class="container">
+        <h1>Not Defteri Uygulaması</h1>
+        <div class="note-input">
+            <input type="text" id="baslik" placeholder="Not Başlığı">
+            <textarea id="not" rows="5" placeholder="Notunuzu buraya yazın..."></textarea>
+            <button id="gonder" onclick="gonder()">Not Ekle</button>
+        </div>
+        <div class="notes-list" id="notes-list">
+            <!-- Notlar burada görünecek -->
+        </div>
+    </div>
+    <script src="java.js"></script>
 </body>
 </html>
