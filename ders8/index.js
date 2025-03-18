@@ -34,14 +34,14 @@ function islem(sayi1,sayi2){
 
 if(sayi1<sayi2) {
 
-    return  alert ("sayi 1 büyüktür")
+    return  alert ("sayi 1 küçüktür")
     
 
 }
 
 else if(sayi1>sayi2) {
 
-    return  alert ("sayi 2 büyüktür")
+    return  alert ("sayi 1 büyüktür")
     
 
 }
