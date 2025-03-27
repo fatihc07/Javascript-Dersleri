@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkileşimler</title>
+
+
+</head>
+<body>
+    
+
+    <form action="index.html" method="post" onsubmit="kontrol()" id="formum">
+
+        <input type="text" value="" placeholder="isminizi giriniz" id="f_isim" oninput="buyuk()">
+        <input type="submit" value="Gönder" onclick="kontrol()">
+
+    </form>
+
+    <div id="kutu"  onmouseover="hove()" onmouseout="disarda()" style="height: 300px;width: 300px;background-color: red;text-align: center;font-size: 50px;" >Boş Div
+       
+    </div>
+    
+  
+    <button id ="tarih" onclick="d()">Tarih</button>
+    <br>
+    <input type="text" id="ikinci_yazi" value="" oninput="boya()">
+    <div id="renk_divi"></div>
+
+
+
+
+
+
+
+
+
+    <script src="j.js"></script>
+
+</body>
+</html>
